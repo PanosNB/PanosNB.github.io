@@ -1,0 +1,13 @@
+﻿UNB CS4735 Fall 2014 Project, Alex MacKenize & Terry Lockett
+Prepared for Panagiotis Patros computer graphics cs4735 course.
+
+
+Sounds were taken as royalty-free music from : http://incompetech.com/ 
+                                               https://www.freesound.org/
+                                http://soundbible.com
+
+
+
+
+The only libaray we used was THREEX.keyboardstate.js to handle keyboard input.
+        https://github.com/jeromeetienne/threex.keyboardstate
