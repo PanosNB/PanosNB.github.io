@@ -5,178 +5,174 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tropoi - Auditory Traditions of the Near East</title>
     <style>
-        :root {
-            --primary-color: #d35400;
-            --secondary-color: #f39c12;
-            --text-color: #2c3e50;
-            --bg-color: #ecf0f1;
-            --accent-color: #16a085;
-        }
-        
-        body {
-            font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-            margin: 0;
-            padding: 0;
-            background-image: url('./motif_instruments_1.webp'); /* Placeholder for the motif background */
-            background-repeat: repeat;
-            background-size: 450px;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        header {
-            background-color: var(--primary-color);
-            color: white;
-            text-align: center;
-            padding: 2em 0;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        h1 {
-            font-size: 3em;
-            margin-bottom: 0;
-            font-weight: 700;
-        }
-        
-        h2 {
-            color: var(--primary-color);
-            border-bottom: 2px solid var(--primary-color);
-            padding-bottom: 10px;
-            font-weight: 500;
-        }
-        
-        .card {
-            background-color: #FFFFFFF1;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            padding: 30px;
-            margin-bottom: 30px;
-            transition: transform 0.3s ease;
-        }
-        
-        .card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .cta-button {
-            display: inline-block;
-            background-color: var(--accent-color);
-            color: white;
-            padding: 12px 24px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 30px;
-            transition: background-color 0.3s, transform 0.3s;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        
-        .cta-button:hover {
-            background-color: #1abc9c;
-            transform: scale(1.05);
-        }
-        
-        footer {
-            background-color: var(--secondary-color);
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-            margin-top: 20px;
-        }
-        
-        .album-info {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            align-items: flex-start;
-        }
+:root {
+    --primary-color: #d35400;
+    --secondary-color: #f39c12;
+    --text-color: #2c3e50;
+    --bg-color: #ecf0f1;
+    --accent-color: #16a085;
+}
 
-        .album-cover {
-            width: 200px;
-            height: 200px;
-            background-color: #ddd;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-weight: bold;
-            color: #666;
-	    background-image: url('./nostalgia_cover.webp');
-	    background-size: contain;
-        }
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+    background-image: url('./motif_instruments_1.webp'); /* Placeholder for the motif background */
+    background-repeat: repeat;
+    background-size: 450px;
+}
 
-        .album-details {
-            flex: 1;
-            min-width: 200px;
-        }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
-        .button-group {
-            display: flex;
-            gap: 10px;
-            margin-top: 15px;
-        }
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+    position: relative;
+    overflow: hidden;
+}
 
-        .button {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
+h1 {
+    font-size: 3em;
+    margin-bottom: 0;
+    font-weight: 700;
+}
 
-        .button:disabled {
-            background-color: #ccc;
-            color: #666;
-            cursor: not-allowed;
-        }
+h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    font-weight: 500;
+}
 
-        .tracklist {
-            margin-top: 20px;
-        }
+.card {
+    background-color: #FFFFFFF1;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
 
-        .tracklist h3 {
-            margin-bottom: 15px;
-        }
+.card:hover {
+    transform: translateY(-5px);
+}
 
-        .tracklist-columns {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center; /* Ensure text is centered */
+}
 
-        .tracklist-column {
-            flex: 1;
-            min-width: 200px;
-        }
+.cta-button:hover {
+    background-color: #1abc9c;
+    transform: scale(1.05);
+}
 
-        .tracklist ol {
-            padding-left: 20px;
-            margin: 0;
-        }
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 20px;
+}
 
-        .tracklist li {
-            margin-bottom: 10px;
-        }
-        
-        @media (max-width: 768px) {
-            .container {
-                padding: 10px;
-            }
-            h1 {
-                font-size: 2em;
-            }
-            .tracklist-columns {
-                flex-direction: column;
-            }
-        }
+.album-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.album-cover {
+    width: 200px;
+    height: 200px;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #666;
+    background-image: url('./nostalgia_cover.webp');
+    background-size: contain;
+}
+
+.album-text, .tracklist, .button-group {
+    flex: 1 1 calc(50% - 20px);
+    min-width: 300px;
+}
+
+.tracklist {
+    margin-top: 20px;
+}
+
+.tracklist h3 {
+    margin-bottom: 15px;
+}
+
+.tracklist-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tracklist-column {
+    flex: 1;
+    min-width: 200px;
+}
+
+.tracklist ol {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.tracklist li {
+    margin-bottom: 10px;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .album-info {
+        flex-direction: column;
+    }
+
+    .album-text, .tracklist, .button-group {
+        flex: 1 1 100%;
+        min-width: 100%;
+    }
+}
+
+
     </style>
     <link rel="icon" href="./tropoi_icon.png" type="image/png">
 </head>
@@ -199,58 +195,61 @@
             <p>By blending pure, enharmonic sounds with unique rhythms and traditional instruments, Tropoi offers a genuine sonic journey that transports you to the Near East.</p>
         </section>
         
-        <section class="card">
-            <h2>New Album: Nostalgia</h2>
-            <div class="album-info">
-                <div class="album-cover">Album Art</div>
-                <div class="album-details">
-                    <p>We're excited to announce our upcoming album, "Nostalgia"! It's currently available exclusively to our Patreon supporters and will soon be released on all major platforms: <a href="https://distrokid.com/hyperfollow/tropoi/nostalgia">Nostalgia-Tropoi Distribution</a>.</p>
-                    <div class="button-group">
-                        <a href="https://www.patreon.com/Tropoi" class="cta-button">Join our Patreon</a>
-                        <button class="button" disabled>YouTube Music</button>
-                        <button class="button" disabled>Spotify</button>
-                    </div>
-                </div>
-            </div>
-            <div class="tracklist">
-                <h3>Tracklist:</h3>
-                <div class="tracklist-columns">
-                    <div class="tracklist-column">
-                        <ol>
-                            <li><a href="https://www.patreon.com/posts/myth-weaver-107794994?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link">Myth Weaver</a></li>
+		<section class="card">
+			<h2>New Album: Nostalgia</h2>
+			<div class="album-info">
+				<div class="album-cover">Album Art</div>
+				<div class="album-text">
+					<p>We're excited to announce that our album, "Nostalgia," is now available on all major platforms! 
+					<p>Nostalgia comprises 10 original compositions using traditional instruments, rhythms and scales (i.e., tropoi, dastgāhs or makams) of the Near East.</p>
+					<p>Instruments: Oud, Santur, Kemanche (Lyra), Qajak, Saz, Setar, Tar, Violin, Guitar and traditional percussion.</p>
+					<p>Traditional Rhythms: Shish-o-Hasht (6/8), Kalamatiano (7/8), Tsifteteli (4/4), Chania Syrtos (8/4), 2-Step Syrtos (4/4), Zembekiko (9/4), Karsilamas (9/8), Tsamiko (3/4), Bayon (4/4)
+				</div>
+				<div class="tracklist">
+					<h3>Tracklist:</h3>
+					<div class="tracklist-columns">
+						<div class="tracklist-column">
+							<ol>
+								<li><a href="https://www.patreon.com/posts/myth-weaver-107794994?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link">Myth Weaver</a></li>
+								<li><a href="https://www.patreon.com/posts/fleeting-107795131?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link">Fleeting Oblivion</a></li>
+								<li><a href="https://www.patreon.com/posts/spring-mirage-107795205?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link">Spring Mirage</a></li>
+								<li><a href="https://www.patreon.com/posts/desert-maze-107795265?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link">Desert Maze</a></li>
+								<li><a href="https://www.patreon.com/posts/admonition-107795344?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link">Admonition</a></li>
+							</ol>
+						</div>
+						<div class="tracklist-column">
+							<ol start="6">
+								<li><a href="https://www.patreon.com/posts/lullayee-107795371?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link">Lullayee</a></li>
+								<li><a href="https://www.patreon.com/posts/eddy-107795404?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link">Eddy</a></li>
+								<li><a href="https://www.patreon.com/posts/cautionary-tale-107795438?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link">Cautionary Tale</a></li>
+								<li><a href="https://www.patreon.com/posts/dancing-manga-107795462?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link">Dancing Manga</a></li>
+								<li><a href="https://www.patreon.com/posts/flight-of-exiled-107795484?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link">Flight of the Exiled</a></li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				<div class="button-group">
+					<a href="https://open.spotify.com/album/5RaTWRSi6LAbowepUAp31B?si=v8SnAahDQWOSSw-AD7SKCw" class="cta-button">Spotify</a>
+					<a href="https://music.youtube.com/watch?v=RewVt34Pe7E&si=CCRbHFJUJfjc1Zwm" class="cta-button">YouTube Music</a>
+					<a href="https://music.apple.com/us/album/nostalgia/1757697425" class="cta-button">Apple Music</a>
+					<a href="http://url2734.distrokid.com/ls/click?upn=u001.a0grtTtFNGObbwv02PitCF6-2FcsDAe1n0Iz8ON3EkvDfhENGw5PwQSoObPEuTdyEmjGDr0N9uMFWDht1ALpB6sc-2BiQyZVO9uIqoG57pahXw4qUXjpATMakQQoWNNu4BDXNblPOIvx-2BRWmTCMDxd2NZm7-2B-2Bvk8bjmY33uTmVM9zGekC-2BGBxGz2KclQo59cMva2Tx6K_V4tflCoPZVaTGlDNdsvXoXX2Hn7Ss0IAErp-2BnDGzVcANW5ShQ-2BZ4H5XTlVm31uQc1JVMEKIzX-2Fz0lJEXvG431g0y77NG9JA69a1GE6UPnTCNqdhtUs6-2FVUXOvJGRyJnNFXuGtlIIAikFKzVExwP0PlefqItQlkUghW73BI49MX-2BT0OddyLai8cQmXew5IVN6-2FvesPCxho2-2Fo1Sh0a3l4rQ-3D-3D" class="cta-button">iTunes</a>
+					<a href="https://amazon.com/music/player/albums/B0D9HZSRWV?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_GX3ZeGQPhdNI4DLODur57o0Z9" class="cta-button">Amazon Music</a>
+					<a href="https://play.anghami.com/album/1055355339" class="cta-button">Anghami</a>
+					<a href="https://www.boomplay.com/albums/94193868" class="cta-button">Boomplay</a>
+					<a href="https://www.deezer.com/en/album/616037892" class="cta-button">Deezer</a>
+					
+					<div>
+						The album also appears on MediaNet, Instagram/Facebook, Adaptr, Flo, iHeartRadio, Claro Música, Joox, Kuack Media, NetEase, Qobuz, Pandora, Saavn, Tencent, Tidal, and TikTok & other ByteDance Stores.
+					</div>
+				</div>
+			</div>
+		</section>
 
-                            <li><a href="https://www.patreon.com/posts/fleeting-107795131?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link">Fleeting Oblivion</a></li>
-
-                            <li><a href="https://www.patreon.com/posts/spring-mirage-107795205?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link">Spring Mirage</a></li>
-
-                            <li><a href="https://www.patreon.com/posts/desert-maze-107795265?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link">Desert Maze</a></li>
-
-                            <li><a href="https://www.patreon.com/posts/admonition-107795344?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link">Admonition</a></li>
-
-                        </ol>
-                    </div>
-                    <div class="tracklist-column">
-                        <ol start="6">
-                            <li><a href="https://www.patreon.com/posts/lullayee-107795371?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link">Lullayee</a></li>
-
-                            <li><a href="https://www.patreon.com/posts/eddy-107795404?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link">Eddy</a></li>
-
-                            <li><a href="https://www.patreon.com/posts/cautionary-tale-107795438?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link">Cautionary Tale</a></li>
-
-                            <li><a href="https://www.patreon.com/posts/dancing-manga-107795462?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link">Dancing Manga</a></li>
-
-                            <li><a href="https://www.patreon.com/posts/flight-of-exiled-107795484?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link">Flight of the Exiled</a></li>
-
-                        </ol>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
+     
         <section class="card">
             <h2>Support Us</h2>
             <p><strong>Support us with a membership!</strong> Your contribution will help us continue producing these beautiful auditory experiences, preserving and sharing the rich musical traditions of our heritage. Join us on this journey and become a part of the Tropoi community today!</p>
-            <a href="https://www.patreon.com/Tropoi" class="cta-button">Become a Member</a>
+            <a href="https://www.patreon.com/Tropoi" class="cta-button">Become a Patreon Member</a>
         </section>
     </div>
     
