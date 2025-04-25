@@ -66,6 +66,25 @@ h2 {
     transform: translateY(-5px);
 }
 
+.navbar {
+    background-color: var(--secondary-color);
+    padding: 1em 0;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    margin: 0 0.5em;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: var(--primary-color);
+}
+
 .cta-button {
     display: inline-block;
     background-color: var(--accent-color);
@@ -181,6 +200,11 @@ footer {
         <h1>Tropoi</h1>
         <p>Discover the Auditory Traditions of the Near East</p>
     </header>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="music-theory.html">Tropoi Music Theory</a>
+    </nav>
     
     <div class="container">
         <section class="card">

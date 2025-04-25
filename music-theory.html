@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tropoi Music Theory</title>
+    <style>
+:root {
+    --primary-color: #d35400;
+    --secondary-color: #f39c12;
+    --text-color: #2c3e50;
+    --bg-color: #ecf0f1;
+    --accent-color: #16a085;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+    background-image: url('./motif_instruments_1.webp');
+    background-repeat: repeat;
+    background-size: 450px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+    position: relative;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+
+.card {
+    background-color: #FFFFFFF1;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.navbar {
+    background-color: var(--secondary-color);
+    padding: 1em 0;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    margin: 0 0.5em;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: var(--primary-color);
+}
+
+.audio-player {
+    width: 100%;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.audio-player h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}
+    </style>
+    <link rel="icon" href="./tropoi_icon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <h1>Tropoi Music Theory</h1>
+        <p>Exploring the Intricacies of Near Eastern Modal Music</p>
+    </header>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="music-theory.html">Tropoi Music Theory</a>
+    </nav>
+    
+    <div class="container">
+        <section class="card">
+            <h2>Understanding the Tropos</h2>
+            <p>In Western music, the octave is divided into 12 equal parts called semitones (or half-tones). However, Byzantine (i.e., Eastern Roman) music, which forms the foundation of many contemporary music systems in the Near and Middle East (including Greek, Turkish, and Arabic traditions, as well as Ottoman music), takes a more nuanced approach. Here, the octave is divided into 72 notes called twelfth tones (also known as a comma or a morio). This means each tone is split into 12 parts instead of two, effectively adding five extra microtonal steps between each semitone.</p>
+            
+            <p>To better understand these divisions, we can use the cent system, where an octave is divided into 1200 cents. In this system:
+            <ul>
+                <li>Semitones occur every 100 cents</li>
+                <li>Twelfth tones occur every 16.667 cents</li>
+            </ul>
+            </p>
+
+            <p>To demonstrate these differences, we present variations of the Rast pentachord. The Rast pentachord consists of five degrees:
+            <ul>
+                <li>Root: 0 cents</li>
+                <li>Second degree: 200 cents</li>
+                <li>Third degree: variable (400 cents in Western music)</li>
+                <li>Fourth degree (perfect fourth): 500 cents</li>
+                <li>Fifth degree (perfect fifth): 700 cents</li>
+            </ul>
+            </p>
+
+            <p>Let's explore the variations of the Rast pentachord, each with a different tuning of the third degree:</p>
+            
+            <div class="audio-player">
+                <h3>Standard Western Tuning (400 cents)</h3>
+                <p>This is the standard Western tuning with the third degree at 400 cents, which you might be most familiar with from Western classical and popular music. This creates a major third interval.</p>
+                <audio controls>
+                    <source src="rast_3_0.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="audio-player">
+                <h3>One Twelfth Tone Lower (383 cents)</h3>
+                <p>Here, we lower the third degree by one twelfth tone to 383 cents, creating a subtle but noticeable difference in the character of the melody. This tuning most closely aligns with the perfect 5/4 ratio of the natural major third.</p>
+                <audio controls>
+                    <source src="rast_3_minus_1_12th.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="audio-player">
+                <h3>Two Twelfth Tones Lower (367 cents)</h3>
+                <p>With the third degree lowered by two twelfth tones to 367 cents, we begin to hear a more distinct Eastern character in the melody.</p>
+                <audio controls>
+                    <source src="rast_3_minus_2_12th.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="audio-player">
+                <h3>Three Twelfth Tones Lower (350 cents)</h3>
+                <p>This variation lowers the third degree by three twelfth tones to 350 cents, creating what is known as a neutral third. This interval is characteristic of many tropoi and creates a distinctly Eastern sound.</p>
+                <audio controls>
+                    <source src="rast_3_minus_3_12th.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Tropoi. All rights reserved.</p>
+    </footer>
+</body>
+</html> 
